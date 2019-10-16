@@ -1,17 +1,29 @@
 #include <iostream>
-#include <String>
+#include <string>
 using namespace std;
 
-int main(){
+int main() {
+	int user_input;
+	cout << "Enter a number" << endl;
+	cin >> user_input;
+	cout << "User_Input: " << user_input << endl;
+	int counter = 0;
+	int remainder;
+	string conversion = " ";
+	while (counter < user_input) {
+		remainder = user_input - counter;
+		cout << "Remainder: " << remainder << endl;
 
-  int user_input;
-  cin << user_input;
-
-  string Conversion(user_input){
-    if(){
-    }
-    
-  } //CONVERT FUNCTION
-} //MAIN
-
-
+		if (remainder <= 4)
+		{
+			conversion += 'I';
+		}
+		if (remainder == 5) {
+			remainder = user_input - counter;
+			conversion += 'V';
+		}
+		counter++;
+	}
+	cout << "Conversion: " << conversion << endl;
+	system("pause");
+}
